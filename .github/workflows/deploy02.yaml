@@ -8,9 +8,11 @@ jobs:
 
     steps:
       - name: Hola Mundo
-        run: cat hola.php
+        run: echo "Hola mundo"
+        # run: cat hola.php
 
   second_job:
+    if: false
     needs: first_job
     runs-on: ubuntu-latest
 
